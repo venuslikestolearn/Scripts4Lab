@@ -1,0 +1,4 @@
+GET TAG, CLASS O/P , CLASS EXPECTED
+awk 'NR%14==2 || NR%14==6 || NR%14==8' vi_rnnTrain.o6208 > o6208
+REMOVE SECOND COLUMN
+sed -i -r 's/\S+//2' FILENAME
