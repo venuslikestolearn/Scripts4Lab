@@ -1,10 +1,10 @@
-# TO USE, PLEASE KEEP BSforxmlGT.SH WITH THIS:)
-# COMMAND TO RUN IS bash BSforxmlGT.sh 'folder containing xml folders' 
+# TO USE, PLEASE KEEP BSforxmlGT.py WITH THIS:)
+# COMMAND TO RUN IS bash BSforxmlGT.sh 'folder containing xml folders' o/ folder
 # HERE one IS THE FOLDER NAME WHRE INPUT XML FILES ARE KEPT
 
 for i in `ls $1`
 do
-	python3 BSforxmlGT.py "$1/$i"
+	python3 /media/GROOVES/Scripts/BSforxmlGT.py "$1/$i" $2
 done
 :'
 if [ ! -d "$align" ]; then
@@ -13,7 +13,7 @@ fi
 fi
 for i in `ls /home/venus/Documents/RecursiveTextAlignmentTool_release_v1_1/texts/output`
 do
-	java RecursiveAlignmentTool texts/output/$i tetxs/0002/$i "texts/align/$i.txt" -opt config.txt
+	java RecursiveAlignmentTool texts/output/$i texts/0002/$i "texts/align/$i.txt" -opt config.txt
 
 done
 if [ ! -d "separatedGT" ]; then

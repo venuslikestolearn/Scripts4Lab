@@ -1,4 +1,12 @@
 GET TAG, CLASS O/P , CLASS EXPECTED
 awk 'NR%14==2 || NR%14==6 || NR%14==8' vi_rnnTrain.o6208 > o6208
-REMOVE SECOND COLUMN
-sed -i -r 's/\S+//2' FILENAME
+REMOVE nth COLUMN
+sed -i -r 's/\S+//n' FILENAME
+GET SECOND COLUMN
+awk '{print $2}' b > v
+DELETE FIRST TWO CHARACTERS
+sed  's .\{2\}  ' FILENAME
+PERL COMMAND:) RENAME PART OF FILENAME I E DELETE THIS PART test.extra
+rename 's/test.extra//g' *.fasta
+PRINT ONLY 2ND COLUMN
+ awk '{print $1}' hindi.frq > ltrchindi.txt

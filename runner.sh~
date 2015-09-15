@@ -1,4 +1,0 @@
-make-batch-counts file-list 10 /bin/cat countMal -write-order 1
-merge-batch-counts countMal
-rm file-list
-

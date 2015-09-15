@@ -1,5 +1,0 @@
-for i in `ls $1`
-do
-        echo "/media/GROOVES/TeluguExperiments/$1/$i" >> file-list
-done
-

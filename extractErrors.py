@@ -5,8 +5,8 @@ with open(sys.argv[1], 'r') as f1, open(sys.argv[2], 'w') as f2 :
 		try:			
 			if words[0] == words[1]:
 				continue
-			elif words[1]== "null":
-				f2.write(words[0]+'\n')
+			elif words[0]== "null":
+				f2.write(words[1]+'\n')
 			else:
 				continue
 		except IndexError:
